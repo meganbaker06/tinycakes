@@ -1,0 +1,191 @@
+    html {
+      font-family: "open Sans light";
+    }
+
+    .header {
+      color: #000;
+    }
+
+    .about {
+      background-color: #e9ddf0;
+
+      color: #ffffff;
+
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+      color: #e9ddf0;
+      background: #000000;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      #my-content {
+        display: none;
+      }
+      /* hide it on small screens */
+      /* .aside { display: none; }  hide it on small screens */
+      /* .col-2 { display:none; }
+  .col-5 { display:none;  } */
+    }
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+
+    @media screen and (max-width: 630px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 701px) and (max-width: 1024px) {
+      #my-content {
+        display: inline-block;
+      }
+      /* show it elsewhere */
+      .aside {
+        display: inline-block;
+      }
+      /* show it on screens */
+      /* .col-2 { display:inline-block; }
+  .col-5 { display:inline-block;  } */
+    }
+
+    .burger {
+      display: inline-block;
+      border: 0;
+      background: none;
+      outline: 0;
+      padding: 0;
+      cursor: pointer;
+      border-bottom: 4px solid currentColor;
+      width: 28px;
+      transition: border-bottom 1s ease-in-out;
+      -webkit-transition: border-bottom 1s ease-in-out;
+      margin: inherit;
+    }
+
+    .burger::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+
+    .burger:before {
+      content: "";
+      display: block;
+      border-bottom: 4px solid currentColor;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .burger:after {
+      content: "";
+      display: block;
+      border-bottom: 4px solid currentColor;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .burger-check {
+      display: none;
+    }
+
+    .burger-check:checked~.burger {
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.8s ease-in-out;
+      -webkit-transition: border-bottom 0.8s ease-in-out;
+    }
+
+    .burger-check:checked~.burger:before {
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .burger-check:checked~.burger:after {
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .navigation {
+      overflow: hidden;
+      max-height: 0;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .burger-check:checked~.navigation {
+      max-height: 500px;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .navbar {
+      background: #e9ddf0;
+      min-height: 130px;
+      text-align: left;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .bulk {
+      background-image: url(http://meganbakermarketing.com/wp-content/uploads/2018/03/symphony.png)
+    }
+    .button {
+    background-color: rgb(120, 158, 175);
+    border-radius: 10px;
+    color: silver;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+  background-color: goldenrod;
+}
+.button a {
+  color:whitesmoke
+}
+.button a:hover {
+  color:beige
+}
+li a {
+  text-decoration: none;
+  color:darkgreen
+}
+li a:hover {
+  text-decoration: underline;
+  color: goldenrod
+}
+    .lorem {
+      font-size: 12px;
+      text-align: justify;
+    }
+
+    .glitter {
+      padding: 10px;
+      margin: 5px;
+      width: 30%;
+    }
